@@ -26,6 +26,5 @@ def find_valid_calls(planeteer_calls)
   element = 0 
   
   found_index = planeteer_calls.find_index { |n| n == "Earth!" || n == "Wind!" || n == "Fire!" || n == "Water!" || n == "Heart!"}
-  end
   planeteer_calls[found_index]
 end
