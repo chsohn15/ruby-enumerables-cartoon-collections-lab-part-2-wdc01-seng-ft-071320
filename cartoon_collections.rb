@@ -28,7 +28,6 @@ def find_valid_calls(planeteer_calls)
   if planeteer_calls.find_index { |n| n == "Earth!" || n == "Wind!" || n == "Fire!" || n == "Water!" || n == "Heart!"}
     found_index = planeteer_calls.find_index { |n| n == "Earth!" || n == "Wind!" || n == "Fire!" || n == "Water!" || n == "Heart!"}
    return planeteer_calls[found_index]
- end
  else
    return nil
   end
