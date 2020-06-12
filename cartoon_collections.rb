@@ -25,6 +25,11 @@ def find_valid_calls(planeteer_calls)
   # Return the first valid call found, or return nil if no valid calls are found
   element = 0 
   
-  found_index = planeteer_calls.find_index { |n| n == "Earth!" || n == "Wind!" || n == "Fire!" || n == "Water!" || n == "Heart!"}
-  planeteer_calls[found_index]
+  if planeteer_calls.find_index { |n| n == "Earth!" || n == "Wind!" || n == "Fire!" || n == "Water!" || n == "Heart!"}
+    found_index = planeteer_calls.find_index { |n| n == "Earth!" || n == "Wind!" || n == "Fire!" || n == "Water!" || n == "Heart!"}
+   return planeteer_calls[found_index]
+ end
+ else
+   return nil
+  end
 end
